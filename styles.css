@@ -1,0 +1,215 @@
+/* Meyer CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(fonts/HelveticaNeue\ Light.ttf);
+}
+
+* {
+  font-family: HelveticaNeue !important;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15vh 40vh 35vh 10vh;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#logo {
+  justify-content: center;
+  align-content: center;
+}
+
+#logo > img {
+  width: 50%;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+#greeting {
+  margin-right: 200px;
+  margin-top: 40px;
+  font-size: 24pt;
+  white-space: nowrap;
+}
+
+#hero > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#portfolioContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card > img {
+  width: 400px;
+  height: 250px;
+}
+
+.blurb {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.blurbLink {
+  color: red;
+}
+
+#footer {
+  text-align: center;
+  background-color: #3D3D3D;
+}
+
+#footer > span {
+  color: rgb(214, 214, 214);
+  text-decoration: none;
+}
+
+#portfolio {
+  text-align: center;
+  padding: 20px;
+  /* font-size: 24pt; */
+}
+
+#portfolio > span {
+  font-weight: bolder;
+  font-size: 24pt;
+}
+
+a { color: inherit; } 
